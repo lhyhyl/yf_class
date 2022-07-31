@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\linearlist">
+      <UniqueIdentifier>{db12bb09-e5cd-45c3-918c-ebba621849b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree">
+      <UniqueIdentifier>{33cfa1d9-433e-47c7-81f4-9cf4ebfa0914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class2">
+      <UniqueIdentifier>{d982357c-c352-4908-a9b4-97489674a413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class3">
+      <UniqueIdentifier>{0929d7b3-ccd7-4b41-adfc-ba2f9ff444de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class4">
+      <UniqueIdentifier>{a8c97e6d-f5a8-4c8b-9432-4acde7ea113a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class5">
+      <UniqueIdentifier>{b7b731f4-da59-4699-8d7e-40138114ba2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class6">
+      <UniqueIdentifier>{da994170-1476-4ce0-9252-500fa5aa5e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tree\class7">
+      <UniqueIdentifier>{5c72b2b9-60d2-4bb1-b9f9-f3a5cffac4b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="delMin.cpp">
+      <Filter>源文件\linearlist</Filter>
+    </ClCompile>
+    <ClCompile Include="delXwithHead.cpp">
+      <Filter>源文件\linearlist</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseOutput.cpp">
+      <Filter>源文件\linearlist</Filter>
+    </ClCompile>
+    <ClCompile Include="findCommon.cpp">
+      <Filter>源文件\linearlist</Filter>
+    </ClCompile>
+    <ClCompile Include="findTheReciprocalK.cpp">
+      <Filter>源文件\linearlist</Filter>
+    </ClCompile>
+    <ClCompile Include="createLink.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkBiTree.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linkQueue.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="createStack.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="createSequentialQueue.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inOrderExp.cpp">
+      <Filter>源文件\tree\class2</Filter>
+    </ClCompile>
+    <ClCompile Include="levelOrder2.cpp">
+      <Filter>源文件\tree\class2</Filter>
+    </ClCompile>
+    <ClCompile Include="postOrder.cpp">
+      <Filter>源文件\tree\class2</Filter>
+    </ClCompile>
+    <ClCompile Include="WPL.cpp">
+      <Filter>源文件\tree\class2</Filter>
+    </ClCompile>
+    <ClCompile Include="haffumanTree.cpp">
+      <Filter>源文件\tree\class3</Filter>
+    </ClCompile>
+    <ClCompile Include="isBalanceTree.cpp">
+      <Filter>源文件\tree\class3</Filter>
+    </ClCompile>
+    <ClCompile Include="isSortTree.cpp">
+      <Filter>源文件\tree\class3</Filter>
+    </ClCompile>
+    <ClCompile Include="levelInSortTree.cpp">
+      <Filter>源文件\tree\class3</Filter>
+    </ClCompile>
+    <ClCompile Include="getHigh.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="isComTree.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="swapChild.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="delXSub.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="findAllAncestor.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="getWidth.cpp">
+      <Filter>源文件\tree\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="doubleNode.cpp">
+      <Filter>源文件\tree\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="preK.cpp">
+      <Filter>源文件\tree\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="leafLink.cpp">
+      <Filter>源文件\tree\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="isSimilar.cpp">
+      <Filter>源文件\tree\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="findKth.cpp">
+      <Filter>源文件\tree\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="createGraphInAL.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="createGraphInAM.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DorBFSinAL.cpp">
+      <Filter>源文件\tree\class6</Filter>
+    </ClCompile>
+    <ClCompile Include="isTree.cpp">
+      <Filter>源文件\tree\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="DFSUseStack.cpp">
+      <Filter>源文件\tree\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS_MIN_Distance.cpp">
+      <Filter>源文件\tree\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="haveRoute.cpp">
+      <Filter>源文件\tree\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="findRoute.cpp">
+      <Filter>源文件\tree\class7</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
