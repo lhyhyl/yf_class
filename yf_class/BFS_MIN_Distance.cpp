@@ -25,27 +25,27 @@
 //	int rear;
 //};
 //void singleShortestPath(ALGraph* G, int* result, int* visited, int start) {
-//	int d = 0, data;
+//	int  data;
 //	Squeue* sq;
 //	Squeue* createQueue(int);
 //	bool enQueue(Squeue*, int, int);
 //	bool deQueue(Squeue*, int*, int);
 //	bool isEmpty(Squeue * sq);
 //	sq = createQueue(G->numV);
-//	enQueue(sq, start, G->numV);
+//	enQueue(sq,start,G->numV);
 //	visited[start] = 1;
 //	result[start] = 0;
 //	while (!isEmpty(sq)) {
-//		deQueue(sq, &data, G->numV);
-//		for (EdgeNode* p = G->adjlist[data].firstEdge; p; p = p->next) {
-//			if (p && !visited[p->index]) {
-//				result[p->index] = result[data] + 1;
-//				visited[p->index] = 1;
-//				enQueue(sq, p->index, G->numV);
+//		deQueue(sq,&data,G->numV);
+//		for (EdgeNode* w = G->adjlist[data].firstEdge; w; w = w->next) {
+//			if (w&&!visited[w->index]) {
+//				result[w->index] = result[data] + 1;
+//				visited[w->index] = 1;
+//				enQueue(sq, w->index,G->numV);
 //			}
 //		}
-//
 //	}
+//	
 //}
 //int main() {
 //	ALGraph* G = (ALGraph*)malloc(sizeof(ALGraph));

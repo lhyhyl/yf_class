@@ -6,8 +6,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //struct Squeue {
 //	biTree data;
@@ -44,8 +44,8 @@
 //int main() {
 //	int count = 0;
 //	bool isCom;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
-//	struct Squeue *sq;
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
+//	Squeue *sq;
 //
 //	biTree *create(biTree *);
 //	void nodeNum(biTree *, int *);

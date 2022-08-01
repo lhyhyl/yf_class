@@ -39,42 +39,26 @@
 //	for (int i = 0; i < G->numV; i++) {
 //		visited[i] = 0;
 //	}
-//	for (int i = 0; i < G->numV; i++) {
-//		if (visited[i])
+//	for (int i = 0; i < G->numV;i++) {
+//		if (visited[i]) {
 //			continue;
+//		}
 //		int v;
-//		printf("%c ", G->adjlist[i].info);
+//		push(s,i);
 //		visited[i] = 1;
-//		push(s, i);//入栈
-//		EdgeNode* p;
-//		while (!empty(s)) {//栈内不空
+//		while (!empty(s)) {
 //			v = top(s);
 //			pop(s);
-//			p = G->adjlist[v].firstEdge;
-//			while (p) {
-//				if (!visited[p->index]) {
-//					printf("%c ", G->adjlist[p->index].info);
-//					visited[p->index] = 1;
-//					push(s, p->index);
-//					p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
-//				}
-//				else {
-//					p = p->next;//摸到底了，平级顶点继续找
+//			printf("%d ", v+1);
+//			for (EdgeNode* w = G->adjlist[v].firstEdge; w; w = w->next) {
+//				if (!visited[w->index]) {
+//					visited[w->index]=1;
+//					push(s,w->index);
 //				}
 //			}
-//			if (p == NULL)
-//				pop(s);
-//			//printf("%c ", G->adjlist[v].info);
-//			//for (p = G->adjlist[v].firstEdge; p; p = p->next) {
-//			//	if (!visited[p->index]) {
-//			//		push(s, p->index);
-//			//		visited[p->index] = 1;
-//			//		//p = G->adjlist[p->index].firstEdge;//顺腾摸瓜
-//			//	}
-//			//}
 //		}
-//
 //	}
+//	
 //}
 //int main() {
 //	ALGraph G;

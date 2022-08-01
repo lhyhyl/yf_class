@@ -6,7 +6,7 @@
 //*/
 //struct BTree {
 //	char data;
-//	struct BTree* left, * right;
+//	BTree* left, * right;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
@@ -43,7 +43,7 @@
 //	}
 //}
 //int main() {
-//	struct BTree* T = (BTree*)malloc(sizeof(BTree));
+//	BTree* T = (BTree*)malloc(sizeof(BTree));
 //	T = create(T);
 //	printf("中缀表达式为：");
 //	putInExp(T, 1);

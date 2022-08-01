@@ -66,7 +66,7 @@
 //
 //bool judgeRouteInBFS(ALGraph *G, int vi, int vj) {
 //	int *visited = (int *)malloc(sizeof(int)*G->numV);
-//	int flag = 0;//进入遍历，路径存在标志
+//	int flag = 0;//进入函数，路径存在标志
 //	int index;//进行判断用
 //	for (int i = 0; i < G->numV; i++) {
 //		visited[i] = 0;//初始化
@@ -83,14 +83,14 @@
 //	}
 //	while (!isEmpty(lq)) {//当队列不空，取出队首元素进行判断
 //		deQueue(lq, &index);
-//		if (!visited[index]) {//若未曾访问过，进行判断
-//			visited[index] = 1;
-//			if (vj == index) {
-//				flag = 1;
-//			}
+//		//if (!visited[index]) {//若未曾访问过，进行判断
+//		visited[index] = 1;
+//		if (vj == index) {
+//			flag = 1;
+//			//}
 //		}
 //		for (EdgeNode *p = G->adjlist[index].firstEdge; p; p = p->next) {
-//			if (!visited[p->index]) {
+//			if (p->index && !visited[p->index]) {
 //				enQueue(lq, p->index);//把所有的未访问过得邻接顶点入队
 //
 //			}
@@ -101,10 +101,8 @@
 //int main() {
 //	int haveRoute;
 //	void createGraphInFile(ALGraph *);
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph ));
+//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
 //	createGraphInFile(G);//创建图
-//	void dispGraph(ALGraph *);
-//	dispGraph(G);
 //	int vi, vj;
 //	printf("请输入vi，vj\n");
 //	printf("vi= ");

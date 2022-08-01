@@ -10,7 +10,7 @@
 //
 //};
 //struct LinkQueue {//上次求高度采用的是顺序队列，这次采用链式队列，雨露均沾哈哈
-//	struct Link *front, *rear;
+//	Link *front, *rear;
 //};
 //
 //#include <stdio.h>
@@ -21,8 +21,8 @@
 //	bool enQueue(LinkQueue *lq, biTree *node);
 //	bool deQueue(LinkQueue *lq, biTree **node);
 //	bool isEmpty(LinkQueue *lq);
-//	struct biTree *p = b;
-//	struct biTree *r=(struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *p = b;
+//	biTree *r=(biTree*)malloc(sizeof(biTree));
 //	if (p) {
 //		enQueue(lq, p);//入队
 //		oldNum++;
