@@ -33,7 +33,7 @@
 //	return head;
 //}
 //int main() {
-//	struct biTree *b = (struct biTree *)malloc(sizeof(struct biTree ));
+//	biTree *b = (biTree *)malloc(sizeof(biTree ));
 //	biTree *create(biTree *);
 //	b = create(b);//创建一颗二叉树
 //	leafLink(b);

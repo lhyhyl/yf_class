@@ -5,8 +5,8 @@
 //*/
 //struct biTree {
 //	char data;
-//	struct biTree *lchild;
-//	struct biTree *rchild;
+//	biTree *lchild;
+//	biTree *rchild;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -24,7 +24,7 @@
 //}
 //int main() {
 //	int num;
-//	struct biTree *T = (struct biTree*)malloc(sizeof(struct biTree));
+//	biTree *T = (biTree*)malloc(sizeof(biTree));
 //	biTree *create(biTree *);
 //	void inOrder(biTree *);
 //	T = create(T);//创建一颗二叉树

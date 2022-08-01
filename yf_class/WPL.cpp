@@ -8,7 +8,7 @@
 //*/
 //struct tree {
 //	int weight;
-//	struct tree *left, *right;
+//	tree *left, *right;
 //};
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
@@ -41,7 +41,7 @@
 //	return total;
 //}
 //int main() {
-//	struct tree *T = (struct tree *)malloc(sizeof(struct tree));
+//	tree *T = (tree *)malloc(sizeof(tree));
 //	T = create(T);
 //	int depth = 0;
 //	int totalW;

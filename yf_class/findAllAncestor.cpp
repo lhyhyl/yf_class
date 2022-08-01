@@ -52,8 +52,8 @@
 //}
 //int main() {
 //	int count = 0, x;
-//	struct biTree* T = (struct biTree*)malloc(sizeof(struct biTree));
-//	struct Stack* s;
+//	biTree* T = (biTree*)malloc(sizeof(biTree));
+//	Stack* s;
 //
 //	biTree* create(biTree*);
 //	void nodeNum(biTree*, int*);

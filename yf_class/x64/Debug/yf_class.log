@@ -1,4 +1,2 @@
-﻿  createStack.cpp
-  isTree.cpp
-  正在生成代码...
-D:\23DataStructure\1v1\WangYF\yf_class\yf_class\isTree.cpp(38): error C4716: “isTree”: 必须返回一个值
+﻿  findRoute.cpp
+  yf_class.vcxproj -> D:\23DataStructure\1v1\WangYF\yf_class\x64\Debug\yf_class.exe

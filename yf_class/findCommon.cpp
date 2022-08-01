@@ -39,7 +39,7 @@
 //	void printfNowLink(Link *);
 //	a = createLink(0);
 //	b = createLink(0);
-//	struct Link *c = (struct Link*)malloc(sizeof(struct Link));
+//	Link *c = (Link*)malloc(sizeof(Link));
 //	c->next = NULL;
 //	//linkCommon(a,b,c);
 //	linkCommon2(a,b,c);
