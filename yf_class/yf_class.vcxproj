@@ -166,6 +166,7 @@
     <ClCompile Include="isSimilar.cpp" />
     <ClCompile Include="isSortTree.cpp" />
     <ClCompile Include="isTree.cpp" />
+    <ClCompile Include="kruskal.cpp" />
     <ClCompile Include="leafLink.cpp" />
     <ClCompile Include="levelInSortTree.cpp" />
     <ClCompile Include="levelOrder2.cpp" />
@@ -173,6 +174,7 @@
     <ClCompile Include="linkQueue.cpp" />
     <ClCompile Include="postOrder.cpp" />
     <ClCompile Include="preK.cpp" />
+    <ClCompile Include="primInAL.cpp" />
     <ClCompile Include="reverseOutput.cpp" />
     <ClCompile Include="swapChild.cpp" />
     <ClCompile Include="WPL.cpp" />
