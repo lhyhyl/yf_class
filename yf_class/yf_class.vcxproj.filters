@@ -31,11 +31,17 @@
     <Filter Include="源文件\tree\class5">
       <UniqueIdentifier>{b7b731f4-da59-4699-8d7e-40138114ba2e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\tree\class6">
+    <Filter Include="源文件\graph">
+      <UniqueIdentifier>{333572c1-6d8c-41d6-b061-6c1e442814ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class6">
       <UniqueIdentifier>{da994170-1476-4ce0-9252-500fa5aa5e76}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\tree\class7">
+    <Filter Include="源文件\graph\class7">
       <UniqueIdentifier>{5c72b2b9-60d2-4bb1-b9f9-f3a5cffac4b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class8">
+      <UniqueIdentifier>{d0c30b96-9b20-422a-b12b-6746b2bf92bd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -133,22 +139,28 @@
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="DorBFSinAL.cpp">
-      <Filter>源文件\tree\class6</Filter>
+      <Filter>源文件\graph\class6</Filter>
     </ClCompile>
     <ClCompile Include="isTree.cpp">
-      <Filter>源文件\tree\class7</Filter>
+      <Filter>源文件\graph\class7</Filter>
     </ClCompile>
     <ClCompile Include="DFSUseStack.cpp">
-      <Filter>源文件\tree\class7</Filter>
+      <Filter>源文件\graph\class7</Filter>
     </ClCompile>
     <ClCompile Include="BFS_MIN_Distance.cpp">
-      <Filter>源文件\tree\class7</Filter>
+      <Filter>源文件\graph\class7</Filter>
     </ClCompile>
     <ClCompile Include="haveRoute.cpp">
-      <Filter>源文件\tree\class7</Filter>
+      <Filter>源文件\graph\class7</Filter>
     </ClCompile>
     <ClCompile Include="findRoute.cpp">
-      <Filter>源文件\tree\class7</Filter>
+      <Filter>源文件\graph\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="primInAL.cpp">
+      <Filter>源文件\graph\class8</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskal.cpp">
+      <Filter>源文件\graph\class8</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
