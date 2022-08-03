@@ -11,13 +11,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-typedef struct Graph {
+struct AMGraph {
 	TYPE Vertex[MAXSIZE];//顶点信息
 	int Edge[MAXSIZE][MAXSIZE];//权值
 	int numV, numE;//顶点、边数量
-}adjMatrix;
+};
 
-void createGraph(adjMatrix* G) {
+void createGraph(AMGraph* G) {
 	int v, e, vi, vj, w;
 	printf("请输入创建的图的顶点与边个数（以空格分开）：");
 	scanf("%d %d", &v, &e);
@@ -44,7 +44,7 @@ void createGraph(adjMatrix* G) {
 
 
 }
-void createGraphFromFile(adjMatrix* G) {
+void createGraphFromFile(AMGraph* G) {
 	FILE* fp;//创建文件指针
 	char ev[4] = {};
 	char numE[3] = { 0 };//边个数信息
@@ -92,14 +92,14 @@ void createGraphFromFile(adjMatrix* G) {
 			weight[strlen(weight) - 1] = ' ';
 			weight = strtok(weight, " ");
 			G->Edge[atoi(start) - 1][atoi(end) - 1] = atoi(weight);
-			//G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
+			G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
 		}
 
 	}
 	fclose(fp);
 
 }
-void dispGraph(adjMatrix* G) {
+void dispGraph(AMGraph* G) {
 	int i, j;
 	printf("\n输出顶点的信息（字符）:\n");
 	for (i = 0; i < G->numV; i++)
@@ -128,7 +128,7 @@ void dispGraph(adjMatrix* G) {
 
 }
 //int main() {
-//	adjMatrix G;
+//	AMGraph G;
 //	createGraph(&G);
 //	//createGraphFromFile(&G);
 //	dispGraph(&G);
