@@ -16,21 +16,21 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define MAXSIZE 100
 #define TYPE int
-typedef struct EdgeNode {//边表结点
+struct EdgeNode {//边表结点
 	int index;//该边所指向的顶点的位置,在顶点数组里面的位置信息
 	int weight;//权值
 	EdgeNode* next;//下一个邻接边
-}EdgeNode;
+};
 
 typedef struct VertexNode {//顶点表节点
 	TYPE info;//顶点信息
 	EdgeNode* firstEdge;//指向第一条依附该顶点的边的指针
 }VertexNode, Adjlist[MAXSIZE];
 
-typedef struct {
+struct ALGraph {
 	Adjlist adjlist;//顶点数组
 	int numE, numV;//边数、顶点数
-}ALGraph;
+};
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,7 +65,7 @@ void createGraphInFile(ALGraph* G) {//从文件中读取我们的图的数据，包括边数，节点
 	char arc[10] = { 0 };//边信息
 	char* vertex;//顶点信息，名称
 	//fp = fopen("graphAL.txt", "r");//打开文件
-	fp = fopen("graphAL.txt", "r");//打开文件
+	fp = fopen("primTest.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
@@ -107,11 +107,11 @@ void createGraphInFile(ALGraph* G) {//从文件中读取我们的图的数据，包括边数，节点
 			G->adjlist[atoi(start) - 1].firstEdge = e;
 
 			//下面与上面相似，目的在于构建无向图
-			//EdgeNode* otherE = (EdgeNode*)malloc(sizeof(struct EdgeNode));
-			//otherE->index = atoi(start) - 1;//数组下标要减一
-			//otherE->weight = atoi(weight);
-			//otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
-			//G->adjlist[atoi(end) - 1].firstEdge = otherE;
+			EdgeNode* otherE = (EdgeNode*)malloc(sizeof(struct EdgeNode));
+			otherE->index = atoi(start) - 1;//数组下标要减一
+			otherE->weight = atoi(weight);
+			otherE->next = G->adjlist[atoi(end) - 1].firstEdge;
+			G->adjlist[atoi(end) - 1].firstEdge = otherE;
 		}
 
 	}

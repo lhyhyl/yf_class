@@ -80,17 +80,17 @@
 //	}
 //	printf("%d ", getSum(G, prims));
 //	for (int i = 0; i < G->numV; i++) {
-//		printf("%c ", G->adjlist[prims[i]]);
+//		printf("%d ", prims[i]+1);
 //	}
 //
 //}
 //
 //int main() {
-//	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
+//	ALGraph G;
 //	void createGraphInFile(ALGraph *);
 //	void dispGraph(ALGraph *);
-//	createGraphInFile(G);//创建图
-//	dispGraph(G);
-//	prim(G, 0);
+//	createGraphInFile(&G);//创建图
+//	dispGraph(&G);
+//	prim(&G, 0);
 //	return 0;
 //}
