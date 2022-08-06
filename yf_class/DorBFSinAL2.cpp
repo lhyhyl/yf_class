@@ -35,16 +35,24 @@
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
+//void BFS(ALGraph *G, int *visited, int v) {//开始广度遍历
+//		//声明有关队列的函数
+//	Squeue* createQueue(int);
+//	bool isEmpty(Squeue*);
+//	bool enQueue(Squeue*, TYPE, int);
+//	bool deQueue(Squeue*, TYPE*, int);
+//	Squeue* sq;
+//	sq = createQueue(G->numV);//创建队列
+//
+//}
 //void BFSBegin(ALGraph* G) {
 //
 //}
-//void BFS(ALGraph *G, int *visited, int v) {//开始广度遍历
+//
+//void DFS(ALGraph *G, int *visited, VertexNode *v) {
 //
 //}
 //void DFSBegin(ALGraph *G) {
-//
-//}
-//void DFS(ALGraph *G, int *visited, VertexNode *v) {
 //
 //}
 //int main() {
