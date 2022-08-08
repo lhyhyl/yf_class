@@ -51,7 +51,7 @@ void createGraphFromFile(AMGraph* G) {
 	char numV[3] = { 0 };//顶点个数信息
 	char arc[16] = { 0 };//边信息
 	char* vertex;//顶点信息，名称
-	fp = fopen("graphAM.txt", "r");//打开文件
+	fp = fopen("primTest.txt", "r");//打开文件
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
