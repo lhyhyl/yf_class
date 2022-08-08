@@ -26,15 +26,16 @@
 //}
 //void prim(AMGraph *G, int start) {
 //	int lowCost[MAXSIZE], prims[MAXSIZE];
-//	int min, k, index = 0;
+//	int index = 0;
 //	prims[index++] = start;
-//	//lowCost[start] = 0;
+//	int k = start;
 //	for (int i = 0; i < G->numV;i++) {//³õÊ¼»¯lowCost
 //		lowCost[i] = G->Edge[start][i];
 //	}
 //	for (int i = 0; i < G->numV;i++) {
-//		if (start == i) continue;
-//		min = 32767;
+//		if (start == i) 
+//			continue;
+//		int min = 32767;
 //		for (int j = 0; j < G->numV;j++) {
 //			if (lowCost[j]&&min >lowCost[j]) {
 //				min = lowCost[j];
