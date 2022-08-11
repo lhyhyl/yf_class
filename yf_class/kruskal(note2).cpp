@@ -46,40 +46,7 @@
 //	fa[i_a] = j_a;//i的祖先指向j的祖先
 //}
 //void kruskal(ALGraph *G) {
-//	int **weights = (int **)malloc(sizeof(int *)*G->numV);//两点间的权值数据
-//	int *fa = (int *)malloc(sizeof(int)*G->numV);//并查集数组
-//	for (int i = 0; i < G->numV; i++) {
-//		fa[i] = i;//最开始将每个节点的祖先设置为自己
-//	}
-//	for (int i = 0; i < G->numV; i++) {
-//		weights[i] = (int *)malloc(sizeof(int)*G->numV);
-//	}
-//	for (int i = 0; i < G->numV; i++) {
-//		for (int j = 0; j < G->numV; j++) {
-//			weights[i][j] = 0;//初始化该二位数组
-//		}
-//	}
-//	int edges = 0;
-//	while (edges < G->numV - 1) {
-//		int weight = 32767;
-//		int start, end;
-//		for (int i = 0; i < G->numV; i++) {//遍历每一个顶点的所有边
-//			for (EdgeNode *p = G->adjlist[i].firstEdge; p; p = p->next) {
-//				//寻找最短边
-//				if (p->weight < weight && findAnster(fa, i) != findAnster(fa, p->index)) {
-//					weight = p->weight;
-//					start = i;
-//					end = p->index;
-//				}
-//			}
-//		}
-//		unionn(fa, start, end);
-//		weights[start][end] = weight;
-//		weights[end][start] = weight;
-//		edges++;
-//	}
-//	outPut(G, weights);
-//
+
 //}
 //int main() {
 //	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));
