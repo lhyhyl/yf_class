@@ -43,6 +43,33 @@
     <Filter Include="源文件\graph\class8">
       <UniqueIdentifier>{d0c30b96-9b20-422a-b12b-6746b2bf92bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\graph\class9">
+      <UniqueIdentifier>{c07868ea-cbb8-4988-b5a8-add2b0021320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class9\review">
+      <UniqueIdentifier>{e89636d8-70e4-4ac9-86c3-bde69237195e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class8\review">
+      <UniqueIdentifier>{76d2baaf-2ef6-4845-8ce4-4266712d916e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class10">
+      <UniqueIdentifier>{8f2507e4-f127-4a4a-9ed4-844147b22714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class10\review">
+      <UniqueIdentifier>{fad52af3-44f9-4f91-bd85-00b865038538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class11">
+      <UniqueIdentifier>{50ff0d0f-d390-40e3-b298-9223ea8dd8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class11\review">
+      <UniqueIdentifier>{9d62b20d-2cb6-4a5a-94ff-82dd77ca4f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class12">
+      <UniqueIdentifier>{e8e307e5-0a88-4dad-893a-eb46630edc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph\class12\review">
+      <UniqueIdentifier>{1281dee2-e312-48bb-b780-05b36da86e3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="delMin.cpp">
@@ -159,8 +186,65 @@
     <ClCompile Include="primInAL.cpp">
       <Filter>源文件\graph\class8</Filter>
     </ClCompile>
-    <ClCompile Include="kruskal.cpp">
+    <ClCompile Include="primInAM.cpp">
       <Filter>源文件\graph\class8</Filter>
+    </ClCompile>
+    <ClCompile Include="levelOrder.cpp">
+      <Filter>源文件\graph\class8\review</Filter>
+    </ClCompile>
+    <ClCompile Include="graphStruct.cpp">
+      <Filter>源文件\graph\class8\review</Filter>
+    </ClCompile>
+    <ClCompile Include="DorBFSinAL2.cpp">
+      <Filter>源文件\graph\class9\review</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskalInAL.cpp">
+      <Filter>源文件\graph\class9</Filter>
+    </ClCompile>
+    <ClCompile Include="primReview.cpp">
+      <Filter>源文件\graph\class9\review</Filter>
+    </ClCompile>
+    <ClCompile Include="primReview(note).cpp">
+      <Filter>源文件\graph\class9\review</Filter>
+    </ClCompile>
+    <ClCompile Include="DijkstraAM.cpp">
+      <Filter>源文件\graph\class10</Filter>
+    </ClCompile>
+    <ClCompile Include="DijkstraAL.cpp">
+      <Filter>源文件\graph\class10</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskal(note).cpp">
+      <Filter>源文件\graph\class10\review</Filter>
+    </ClCompile>
+    <ClCompile Include="postOrder(review).cpp">
+      <Filter>源文件\graph\class10\review</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra(review).cpp">
+      <Filter>源文件\graph\class11\review</Filter>
+    </ClCompile>
+    <ClCompile Include="prim(review).cpp">
+      <Filter>源文件\graph\class11\review</Filter>
+    </ClCompile>
+    <ClCompile Include="floyd.cpp">
+      <Filter>源文件\graph\class11</Filter>
+    </ClCompile>
+    <ClCompile Include="kruskal%28note2%29.cpp">
+      <Filter>源文件\graph\class11\review</Filter>
+    </ClCompile>
+    <ClCompile Include="topoLogicalSort.cpp">
+      <Filter>源文件\graph\class12</Filter>
+    </ClCompile>
+    <ClCompile Include="floyd(review).cpp">
+      <Filter>源文件\graph\class12\review</Filter>
+    </ClCompile>
+    <ClCompile Include="R_isBalanceTree.cpp">
+      <Filter>源文件\graph\class12\review</Filter>
+    </ClCompile>
+    <ClCompile Include="R_getWidth.cpp">
+      <Filter>源文件\graph\class12\review</Filter>
+    </ClCompile>
+    <ClCompile Include="topoSort2.cpp">
+      <Filter>源文件\graph\class12</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

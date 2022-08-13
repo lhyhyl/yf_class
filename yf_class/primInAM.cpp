@@ -24,7 +24,7 @@
 //	}
 //	return sum;
 //}
-//void prim(AMGraph *G, int start) {
+//void prim(AMGraph* G, int start) {
 //	int lowCost[MAXSIZE], prims[MAXSIZE];
 //	int index = 0;
 //	prims[index++] = start;
