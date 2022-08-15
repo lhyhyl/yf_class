@@ -34,9 +34,9 @@ void createGraph(AMGraph* G) {
 		printf("请输入第%d个节点信息：", i + 1);
 		scanf("\n%c", &G->Vertex[i]);
 	}
-	for (int i = 0; i < G->numE;i++) {
+	for (int i = 0; i < G->numE; i++) {
 		printf("请输入边的信息vi vj w(以空格分开)");
-		scanf("%d %d %d",&vi,&vj,&w);
+		scanf("%d %d %d", &vi, &vj, &w);
 		G->Edge[vi][vj] = w;
 		G->Edge[vj][vi] = w;
 
@@ -55,6 +55,11 @@ void createGraphFromFile(AMGraph* G) {
 	fp = fopen("floyd.txt", "r");//打开文件
 	//fp = fopen("primTest.txt", "r");//打开文件
 =======
+<<<<<<< HEAD
+	fp = fopen("floyd.txt", "r");//打开文件
+	//fp = fopen("primTest.txt", "r");//打开文件
+=======
+>>>>>>> 9825a7fe3ab672f45c09df0858971be88bdb7927
 	//fp = fopen("floyd.txt", "r");//打开文件
 	fp = fopen("primTest.txt", "r");//打开文件
 >>>>>>> 99cec39960c28ef0f3ab4e15fd79b5aa80239d41
@@ -98,7 +103,7 @@ void createGraphFromFile(AMGraph* G) {
 			weight[strlen(weight) - 1] = ' ';
 			weight = strtok(weight, " ");
 			G->Edge[atoi(start) - 1][atoi(end) - 1] = atoi(weight);
-			//G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
+			G->Edge[atoi(end) - 1][atoi(start) - 1] = atoi(weight);
 		}
 
 	}
