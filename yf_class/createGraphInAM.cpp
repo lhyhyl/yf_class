@@ -51,18 +51,9 @@ void createGraphFromFile(AMGraph* G) {
 	char numV[3] = { 0 };//顶点个数信息
 	char arc[16] = { 0 };//边信息
 	char* vertex;//顶点信息，名称
-<<<<<<< HEAD
-	fp = fopen("floyd.txt", "r");//打开文件
 	//fp = fopen("primTest.txt", "r");//打开文件
-=======
-<<<<<<< HEAD
-	fp = fopen("floyd.txt", "r");//打开文件
-	//fp = fopen("primTest.txt", "r");//打开文件
-=======
->>>>>>> 9825a7fe3ab672f45c09df0858971be88bdb7927
 	//fp = fopen("floyd.txt", "r");//打开文件
 	fp = fopen("primTest.txt", "r");//打开文件
->>>>>>> 99cec39960c28ef0f3ab4e15fd79b5aa80239d41
 	if (fp == NULL) {
 		printf("该文件无法打开！");
 		return;
