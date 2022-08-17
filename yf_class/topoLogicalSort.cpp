@@ -29,15 +29,11 @@
 //#include <stdlib.h>
 //
 //void inDegree(ALGraph *G,int *indegree) {//统计每个顶点的入度，用数组保存
-<<<<<<< HEAD
 //	for (int i = 0; i < G->numV; i++) {
 //		for (EdgeNode* p = G->adjlist[i].firstEdge; p; p = p->next) {
 //			indegree[p->index]++;
 //		}
 //	}
-=======
-
->>>>>>> 9825a7fe3ab672f45c09df0858971be88bdb7927
 //}
 //void topoSort(ALGraph *G) {
 //	Stack *s = (Stack*)malloc(sizeof(Stack));
@@ -46,7 +42,6 @@
 //	bool empty(Stack *);
 //	int top(Stack *);
 //	bool pop(Stack *);
-<<<<<<< HEAD
 //	int* indegree;
 //	s = createStack(G->numV);
 //	indegree = (int*)malloc(sizeof(int) * G->numV);
@@ -68,9 +63,7 @@
 //				push(s, p->index);
 //		}
 //	}
-=======
 //	
->>>>>>> 9825a7fe3ab672f45c09df0858971be88bdb7927
 //}
 //int main() {
 //	ALGraph *G = (ALGraph *)malloc(sizeof(ALGraph));

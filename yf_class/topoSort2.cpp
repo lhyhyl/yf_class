@@ -16,12 +16,12 @@
 //typedef struct EdgeNode {//边表结点
 //	int index;//该边所指向的顶点的位置,在顶点数组里面的位置信息
 //	int weight;//权值
-//	EdgeNode* next;//下一个邻接边
+//	EdgeNode *next;//下一个邻接边
 //}EdgeNode;
 //
 //typedef struct VertexNode {//顶点表节点
 //	int info;//顶点信息
-//	EdgeNode* firstEdge;//指向第一条依附该顶点的边的指针
+//	EdgeNode *firstEdge;//指向第一条依附该顶点的边的指针
 //}VertexNode, Adjlist[MAXSIZE];
 //
 //typedef struct {
@@ -30,26 +30,61 @@
 //}ALGraph;
 ////队列结构(我们采用顺序队列)
 //struct Squeue {
-//	TYPE* arr;
+//	TYPE *arr;
 //	int front, rear;
 //};
 //#include <stdio.h>
 //#include <stdlib.h>
 //
-//void DFS(ALGraph* G, int* visited, VertexNode* v, int index, int& time, int* finishTime) {
-//	
+//void DFS(ALGraph *G, int *visited, VertexNode *v,int index,int &time,int * finishTime) {
+//	//printf("%d ", index);//打印传入的节点
+//	visited[index] = 1;//置访问为1
+//	for (EdgeNode *w = v->firstEdge; w; w = w->next) {
+//		if (w) {//如果有邻接点，传入DFS
+//			if (!visited[w->index]) {//未访问
+//				DFS(G, visited, &G->adjlist[w->index],w->index,time,finishTime);
+//			}
+//		}
+//
+//	}
+//	finishTime[index] = ++time;
 //
 //}
-//void topoSort(ALGraph* G) {
-//	
+//void topoSort(ALGraph *G) {
+//	int* visited = (int*)malloc(sizeof(int) * G->numV);//设置标记数组
+//	int* finishTime = (int*)malloc(sizeof(int) * G->numV);//设置标记数组
+//	for (int i = 0; i < G->numV; i++) {
+//		visited[i] = 0;
+//		finishTime[i] = 0;
+//	}
+//	for (int i = 0; i < G->numV; i++) {//从第一个节点开始“顺藤摸瓜”
+//		if (!visited[i]) {
+//			int time = 0;
+//			DFS(G, visited, &G->adjlist[i],i,time,finishTime);
+//		}
+//	}
+//
+//	//打印拓扑序列
+//	printf("\n");
+//	for (int i = 0; i < G->numV;i++) {
+//		int max = -999,k;
+//		for (int j = 0; j < G->numV;j++) {
+//			if (max<finishTime[j]) {
+//				max = finishTime[j];
+//				k = j;
+//			}
+//		}
+//		printf("%d ",k+1);
+//		finishTime[k] = -999;
+//	}
 //}
 //
 //int main() {
-//	ALGraph* graph = (ALGraph*)malloc(sizeof(ALGraph));
+//	ALGraph *graph = (ALGraph *)malloc(sizeof(ALGraph));
 //	//声明函数
-//	void createGraph(ALGraph*);
-//	void createGraphInFile(ALGraph*);
-//	void dispGraph(ALGraph*);
+//	void createGraph(ALGraph *);
+//	void createGraphInFile(ALGraph *);
+//	void dispGraph(ALGraph *);
 //	//创建图
 //	createGraphInFile(graph);
 //	//打印图
